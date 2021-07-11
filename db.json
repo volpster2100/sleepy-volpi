@@ -1,0 +1,4 @@
+{
+    "success": ["Congrats! You're a sleep master!"],
+    "failure": ["Uh oh... something went wrong! Please reload the page and try again!"]
+}
