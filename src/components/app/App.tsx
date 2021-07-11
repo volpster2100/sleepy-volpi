@@ -42,12 +42,16 @@ function App() {
     const [inBedOptionsPending, inBedOptions] = useInBedIncrements();
     const [asleepOptionsPending, asleepOptions] = useAsleepIncrements();
 
+    const sleepScore = () => {
+        return Math.round(100 * (timeAsleep ?? 0) / (timeInBed ?? 1));
+    }
+
     const submit = () => {
         setSubmitting(true);
 
         const request: ISaveSleepScore = {
             sleepScore: localStorage.getItem("error") === null
-                ? 100 * timeAsleep! / timeInBed!
+                ? sleepScore()
                 : 150
         };
 
@@ -95,6 +99,7 @@ function App() {
                     {result &&
                         <Grid item container spacing={1} xs={12} justify="center">
                             <Grid item xs={12}>
+                                <Typography align="center" color="primary" variant="h4">{sleepScore()}</Typography>
                                 <Typography align="center">{result}</Typography>
                             </Grid>
                             <Grid item>
