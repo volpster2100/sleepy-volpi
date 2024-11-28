@@ -3,7 +3,7 @@ const { nanoid } = require('nanoid')
 module.exports = async (req, res) => {
     const sleepScore = req.body.sleepScore;
 
-    if(sleepScore > 100){
+    if (sleepScore > 100) {
         return res.status(400).send({
             "code": 1000400,
             "message": "Invalid value"

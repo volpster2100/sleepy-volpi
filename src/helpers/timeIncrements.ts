@@ -1,18 +1,18 @@
-export function TimeIncrements(){
+const TimeIncrements = (): number[] => {
     const max = 1440;
     const min = 0;
     const increment = 30;
 
-    let increments:number[] = [];
+    const increments: number[] = [];
 
     // Generate increments
     let i = min;
-    while (i <= max){
+    while (i <= max) {
         increments.push(i);
         i += increment;
     }
 
     return increments;
-}
+};
 
 export default TimeIncrements;

@@ -1,4 +1,4 @@
-export default interface IApiError{
-    code:number;
-    message:string;
+export default interface IApiError {
+  code: number;
+  message: string;
 }

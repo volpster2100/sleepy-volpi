@@ -1,3 +1,3 @@
 export default interface ISaveSleepScore{
-    sleepScore:number;
+    sleepScore:number
 }

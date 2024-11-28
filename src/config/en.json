@@ -1,17 +1,17 @@
 {
-    "page":{
-        "common":{
-            "hour": "hour",
-            "hours": "hours",
-            "minutes": "minutes",
-            "loading": "Loading..."
-        }
-    },
-    "label":{
-        "chooseOption": "Choose one...",
-        "inBed": "Duration in bed",
-        "asleep": "Duration asleep",
-        "submit": "Calculate",
-        "reset": "Back"
+  "page": {
+    "common": {
+      "hour": "hour",
+      "hours": "hours",
+      "minutes": "minutes",
+      "loading": "Loading..."
     }
+  },
+  "label": {
+    "chooseOption": "Choose one...",
+    "inBed": "Duration in bed",
+    "asleep": "Duration asleep",
+    "submit": "Calculate",
+    "reset": "Back"
+  }
 }
